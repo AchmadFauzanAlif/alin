@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Pengantar Komputasi Aljabar Linier
+- file: Sistem Persamaan Linier dan Eliminasi Gauss
+- file: Aljabar Matriks
