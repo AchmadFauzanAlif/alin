@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: Pengantar Komputasi Aljabar Linier
-  sections:
-  - file: Sistem Persamaan Linier dan Eliminasi Gauss
-  - file: Aljabar Matriks
-  - file: Matriks Invers
+  sections: Materi
+    - file: Sistem Persamaan Linier dan Eliminasi Gauss
+    - file: Aljabar Matriks
+    - file: Matriks Invers
