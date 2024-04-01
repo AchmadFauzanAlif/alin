@@ -12,5 +12,5 @@ Prodi : Teknik Informatika
 
 Universitas : Universitas Trunojoyo Madura
 
-Email : fitrah.venom39@gmail.com
+Email : fznfitrah@gmail.com
 ```
