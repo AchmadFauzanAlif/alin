@@ -591,7 +591,10 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ini adalah matriks yang tanpa menggunakan matriks identitas </span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.57142857</span><span class="p">,</span><span class="o">-</span><span class="mf">0.14285714</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mf">0.85714286</span><span class="p">,</span><span class="mf">0.28571429</span><span class="p">,</span><span class="o">-</span><span class="mf">0.5</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># Method numpy yang dapat digunakan untuk pembuktian invers matriks</span>
 <span class="n">a_inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -600,9 +603,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-1.00000000e+00  1.38777878e-17  5.00000000e-01]
- [ 5.71428571e-01 -1.42857143e-01  0.00000000e+00]
- [ 8.57142857e-01  2.85714286e-01 -5.00000000e-01]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-1.          0.          0.5       ]
+ [ 0.57142857 -0.14285714  0.        ]
+ [ 0.85714286  0.28571429 -0.5       ]]
+
+[[0.99999996 1.99999999 0.99999996]
+ [3.99999991 0.99999996 3.99999991]
+ [3.99999992 3.99999998 1.99999992]]
 </pre></div>
 </div>
 </div>
