@@ -183,6 +183,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Sistem%20Persamaan%20Linier%20dan%20Eliminasi%20Gauss.html"><em>Sistem Persamaan Linier (SPL) dan Eliminasi Gauss</em></a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Aljabar Matriks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Matriks%20Invers.html"><em>Materi Invers Matriks</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Determinan%20Matriks.html">Materi Determinan Matriks</a></li>
 </ul>
 </li>
 </ul>
@@ -679,6 +680,29 @@ dapat diperoleh dengan menghitung invers matriks A</p>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-0.07142857  0.14285714]
  [ 0.28571429 -0.07142857]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Membuat matriks</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+
+<span class="c1"># Perkalian Matriks</span>
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
+<span class="c1"># C = A @ B </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 69  90]
+ [ 78 108]
+ [111 150]]
 </pre></div>
 </div>
 </div>

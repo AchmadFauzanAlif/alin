@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/codespace/.local/lib/python3.10/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/codespace/.local/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/usr/local/python/3.10.13/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/codespace/.local/lib/python3.10/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/codespace/.local/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/codespace/.local/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+print("Matriks minorF4")
+minoF4 = np.array([[2,1,3],[3,4,1],[2,3,2]])
+print(minoF4)
+print()
+
+minoMatF41 = 2 * (-1**(1+1)) * np.linalg.det(np.array([[4,1],[3,2]]))
+minoMatF42 = 1 * (-1**(1+2)) * np.linalg.det(np.array([[3,1],[2,2]]))
+minoMatF43 = 3 * (-1**(1+3)) * np.linalg.det(np.array([[4,1],[3,2]]))
+
+print("Hasil :", minoMatF41.round(), minoMatF42.round(), minoMatF3.round())
+------------------
+
+----- stdout -----
+Matriks minorF4
+[[2 1 3]
+ [3 4 1]
+ [2 3 2]]
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[16], line 10[0m
+[1;32m      7[0m minoMatF42 [38;5;241m=[39m [38;5;241m1[39m [38;5;241m*[39m ([38;5;241m-[39m[38;5;241m1[39m[38;5;241m*[39m[38;5;241m*[39m([38;5;241m1[39m[38;5;241m+[39m[38;5;241m2[39m)) [38;5;241m*[39m np[38;5;241m.[39mlinalg[38;5;241m.[39mdet(np[38;5;241m.[39marray([[[38;5;241m3[39m,[38;5;241m1[39m],[[38;5;241m2[39m,[38;5;241m2[39m]]))
+[1;32m      8[0m minoMatF43 [38;5;241m=[39m [38;5;241m3[39m [38;5;241m*[39m ([38;5;241m-[39m[38;5;241m1[39m[38;5;241m*[39m[38;5;241m*[39m([38;5;241m1[39m[38;5;241m+[39m[38;5;241m3[39m)) [38;5;241m*[39m np[38;5;241m.[39mlinalg[38;5;241m.[39mdet(np[38;5;241m.[39marray([[[38;5;241m4[39m,[38;5;241m1[39m],[[38;5;241m3[39m,[38;5;241m2[39m]]))
+[0;32m---> 10[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mHasil :[39m[38;5;124m"[39m, minoMatF41[38;5;241m.[39mround(), minoMatF42[38;5;241m.[39mround(), [43mminoMatF3[49m[38;5;241m.[39mround())
+
+[0;31mNameError[0m: name 'minoMatF3' is not defined
+
