@@ -1,4 +1,7 @@
-# Komputasi Aljabar Linier dan Matriks KELAS A
+
+# *PROFILE*
+
+## Komputasi Aljabar Linier dan Matriks KELAS A
 Saya disini akan memperkenalkan materi Komputasi Aljabar Linier dan Matriks yang telah diberikan oleh Pemateri. Ini juga merupakan dokumentasi tentang perjalanan saya selama mengikuti mata kuliah KAL kelas A ini
 
 
