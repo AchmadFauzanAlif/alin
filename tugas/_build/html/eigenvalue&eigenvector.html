@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tugas &amp; Materi &#8212; My sample book</title>
+    <title>EigenValue &amp; EigenVector &#8212; My sample book</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Pengantar Komputasi Aljabar Linier';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'eigenvalue&eigenvector';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linier (SPL) dan Eliminasi Gauss" href="Sistem%20Persamaan%20Linier%20dan%20Eliminasi%20Gauss.html" />
-    <link rel="prev" title="PROFILE" href="intro.html" />
+    <link rel="prev" title="Materi Determinan Matriks" href="Determinan%20Matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -179,12 +178,12 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Tugas &amp; Materi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Pengantar%20Komputasi%20Aljabar%20Linier.html">Tugas &amp; Materi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Sistem%20Persamaan%20Linier%20dan%20Eliminasi%20Gauss.html"><em>Sistem Persamaan Linier (SPL) dan Eliminasi Gauss</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="Aljabar%20Matriks.html">Aljabar Matriks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Matriks%20Invers.html"><em>Materi Invers Matriks</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="Determinan%20Matriks.html">Materi Determinan Matriks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eigenvalue%26eigenvector.html">EigenValue &amp; EigenVector</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">EigenValue &amp; EigenVector</a></li>
 </ul>
 </li>
 </ul>
@@ -241,7 +240,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/AchmadFauzanAlif/alin/blob/doc/tugas/Pengantar Komputasi Aljabar Linier.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/AchmadFauzanAlif/alin/blob/doc/tugas/eigenvalue&eigenvector.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -289,7 +288,7 @@
       
       
       
-      <li><a href="https://github.com/AchmadFauzanAlif/alin/issues/new?title=Issue%20on%20page%20%2FPengantar Komputasi Aljabar Linier.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/AchmadFauzanAlif/alin/issues/new?title=Issue%20on%20page%20%2Feigenvalue&eigenvector.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -319,7 +318,7 @@
       
       
       
-      <li><a href="_sources/Pengantar Komputasi Aljabar Linier.ipynb" target="_blank"
+      <li><a href="_sources/eigenvalue&eigenvector.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -403,7 +402,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tugas & Materi</h1>
+    <h1>EigenValue & EigenVector</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -413,7 +412,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-pengantar">Tugas Pengantar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-mengenai-eigenvalue-dan-eigenvector">Penjelasan  mengenai Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue">Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-aplikasi">Contoh Aplikasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalue-dan-eigenvector-menggunakan-library-numpy">Menghitung Eigenvalue dan Eigenvector Menggunakan Library Numpy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-matriks-2-times2">Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(2\times2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-matriks-3-times3">Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(3\times3\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-eigenvalue-dan-eigenvector">Implementasi Eigenvalue dan EigenVector</a></li>
 </ul>
             </nav>
         </div>
@@ -425,15 +435,112 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-materi">
-<h1>Tugas &amp; Materi<a class="headerlink" href="#tugas-materi" title="Link to this heading">#</a></h1>
-<section id="tugas-pengantar">
-<h2>Tugas Pengantar<a class="headerlink" href="#tugas-pengantar" title="Link to this heading">#</a></h2>
-<p>Berikut ini adalah link youtube tugas pengantar, cara membuat web statis di github :
-<a class="reference external" href="https://youtu.be/PBgq9MyTnvM?si=ORm80453hBYcg1a-">https://youtu.be/PBgq9MyTnvM?si=ORm80453hBYcg1a-</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-eigenvector">
+<h1>EigenValue &amp; EigenVector<a class="headerlink" href="#eigenvalue-eigenvector" title="Link to this heading">#</a></h1>
+<section id="penjelasan-mengenai-eigenvalue-dan-eigenvector">
+<h2>Penjelasan  mengenai Eigenvalue dan Eigenvector<a class="headerlink" href="#penjelasan-mengenai-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<p>Eigenvalue dan eigenvector adalah konsep penting dalam analisis matematika, khususnya dalam bidang linier aljabar dan statistika. Mereka digunakan secara luas dalam berbagai aplikasi, termasuk pengenalan wajah, analisis data, dan optimasi.</p>
+<section id="eigenvalue">
+<h3>Eigenvalue<a class="headerlink" href="#eigenvalue" title="Link to this heading">#</a></h3>
+<p>Eigenvalue, juga dikenal sebagai nilai eigen, adalah nilai yang terkait dengan matriks square. Dalam konteks linear algebra, eigenvalue dari matriks A adalah niali <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi persamaan berikut ini</p>
+<div class="math notranslate nohighlight">
+\[ Av = \lambda v\]</div>
+<p>dimana <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> adalah vektor non-nol yang disebut eigenvector, dan <span class="math notranslate nohighlight">\(\lambda\)</span> adalah nilai aigenvalue. Dalam arti lain, aigenvalue adalah niali yang membuat vektor <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> menjadi vektor linear dari matriks A</p>
 </section>
-<div class="toctree-wrapper compound">
+<section id="eigenvector">
+<h3>Eigenvector<a class="headerlink" href="#eigenvector" title="Link to this heading">#</a></h3>
+<p>Eigenvector, seperti yang disebutkan sebelumnya, adalah vektor non-nol yang memenuhii persamaan eigenvalue. Vektor ini memiliki sifat khusu bahwa ketika diterapkan pada matriks A, hasilnya adalah hasil perkalian dengan nilai eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span>. Dalam contho di atas, <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> adalah eigenvector dari matrks A dengan eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></p>
+</section>
+<section id="contoh-aplikasi">
+<h3>Contoh Aplikasi<a class="headerlink" href="#contoh-aplikasi" title="Link to this heading">#</a></h3>
+<p>Eigenvalue dan eigenvector memiliki aplikasi yang luas dalam berbagai bidang, termasuk:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.academia.edu/42215462/Penggunaan_PCA_Principal_Component_Analysis_">Pengenalan Wajah</a>: Dalam pengenalain wajah, eigenvector digunakan untuk menganalisis struktur wajah dan menemukan ciri ciri yang unik. Eigenvalue digunakan untuk menentukan skala dan orientasi dari ciri ciri tersebut</p></li>
+<li><p>Analisis Data: Dalam analisis data, eigenvector digunakan untuk mengurangi dimensi data yang kompleks dan menemukan sturktur yang tersembunyi. Eigenvalue digunakan untuk menentukan signifikansi dari sturktur tersebut</p></li>
+</ol>
+</section>
+</section>
+<section id="menghitung-eigenvalue-dan-eigenvector-menggunakan-library-numpy">
+<h2>Menghitung Eigenvalue dan Eigenvector Menggunakan Library Numpy<a class="headerlink" href="#menghitung-eigenvalue-dan-eigenvector-menggunakan-library-numpy" title="Link to this heading">#</a></h2>
+<p>Di zaman sekarang kita telah dimudahkan dengan teknologi yang telah tersedia, termasuk juga dengan cara kita untuk ingin mencari suatu eigenvalue dan eigenvector suatu data dengan menggunakan bahasa python dan juga library-librarynya. Saat ini saya akan mencoba mencari eigenvalue dan eigenvector dengan menggunakan bahasa python dan menggunakan libraby numpy</p>
+<section id="mencari-eigenvalue-dan-eigenvector-matriks-2-times2">
+<h3>Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(2\times2\)</span><a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector-matriks-2-times2" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
+
+<span class="n">eigenvalue</span><span class="p">,</span> <span class="n">eigenvector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalue: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalue</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvector: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvector</span><span class="o">.</span><span class="n">round</span><span class="p">())</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalue: 
+[5. 2.]
+Eigenvector: 
+[[ 1. -0.]
+ [ 1.  1.]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mencari-eigenvalue-dan-eigenvector-matriks-3-times3">
+<h3>Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(3\times3\)</span><a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector-matriks-3-times3" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
+
+
+<span class="n">eigenvalue</span><span class="p">,</span> <span class="n">eigenvector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalue: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalue</span><span class="o">.</span><span class="n">round</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvector: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvector</span><span class="o">.</span><span class="n">round</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalue: 
+[ 7.  1. -2.]
+Eigenvector: 
+[[-0. -1.  0.]
+ [-1.  0. -1.]
+ [-1.  0.  1.]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="implementasi-eigenvalue-dan-eigenvector">
+<h2>Implementasi Eigenvalue dan EigenVector<a class="headerlink" href="#implementasi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pcaSVD</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="c1"># Center X and get covariance matrix C</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">X</span> <span class="o">-=</span> <span class="n">X</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># SVD</span>
+    <span class="n">u</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">vt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">full_matrices</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Return principal compnents and eigenvalues to calculate the portion of sample variance explained</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">X</span> <span class="o">@</span> <span class="n">vt</span><span class="o">.</span><span class="n">T</span><span class="p">),</span> <span class="p">(</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -467,22 +574,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Determinan%20Matriks.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><em>PROFILE</em></p>
+        <p class="prev-next-title">Materi Determinan Matriks</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Sistem%20Persamaan%20Linier%20dan%20Eliminasi%20Gauss.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><em>Sistem Persamaan Linier (SPL) dan Eliminasi Gauss</em></p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -500,7 +598,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-pengantar">Tugas Pengantar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-mengenai-eigenvalue-dan-eigenvector">Penjelasan  mengenai Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue">Eigenvalue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-aplikasi">Contoh Aplikasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-eigenvalue-dan-eigenvector-menggunakan-library-numpy">Menghitung Eigenvalue dan Eigenvector Menggunakan Library Numpy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-matriks-2-times2">Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(2\times2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector-matriks-3-times3">Mencari Eigenvalue dan Eigenvector Matriks <span class="math notranslate nohighlight">\(3\times3\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-eigenvalue-dan-eigenvector">Implementasi Eigenvalue dan EigenVector</a></li>
 </ul>
   </nav></div>
 
