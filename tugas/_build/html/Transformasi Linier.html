@@ -415,6 +415,11 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">Sifat Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penerapan-dari-transformasi-linier">Penerapan dari Transformasi Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-transformasi">Matrix Transformasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-dari-refleksi-pada-transformasi-linier">Pengertian dari Refleksi pada transformasi linier</a></li>
 </ul>
             </nav>
         </div>
@@ -443,7 +448,7 @@ berlaku.</p>
 <p>Sifat sifat dari transformasi linier adalah sebagai berikut:</p>
 <ol class="arabic simple">
 <li><p>Pelestarian Jumlah:
-Transformasi linier mempertahankan jumlah dua vektor. Artinya, jika kita mempunyai dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span>, transformasi linier <span class="math notranslate nohighlight">\(T\)</span> memenuhi $<span class="math notranslate nohighlight">\(T(u+v) = T(u) + T(v)\)</span>$
+Transformasi linier mempertahankan jumlah dua vektor. Artinya, jika kita mempunyai dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span>, transformasi linier <span class="math notranslate nohighlight">\(T\)</span> memenuhi $<span class="math notranslate nohighlight">\( T(u+v) = T(u) + T(v) \)</span>$
 Pembuktiannya adalah sebagai berikut ini:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -453,52 +458,127 @@ A = \begin{pmatrix}
 3 &amp; 4
 \end{pmatrix}
 \end{split}\]</div>
-<p>Ambil dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span>
-$$
+<p>Ambil dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
 u = \begin{pmatrix}
-1\
+1\\
 2
-\end{pmatrix},</p>
-<p>v = \begin{pmatrix}
-2\
+\end{pmatrix},\end{split}\\\begin{split}v = \begin{pmatrix}
+2\\
 3
-\end{pmatrix}
-$$</p>
+\end{pmatrix}\end{split}\end{aligned}\end{align} \]</div>
 <p>pertama, kita hitung <span class="math notranslate nohighlight">\(t(u)\)</span> dan <span class="math notranslate nohighlight">\(t(v)\)</span></p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{split}
-t(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \end{split}\\\begin{split}\begin{pmatrix} 1 \\ 1 \end{pmatrix} =\end{split}\\\begin{split}
-\begin{pmatrix} 1 &amp;  1 &amp; + &amp; 2  &amp; 1 \\ 3 &amp; 1 &amp; + &amp; 4 &amp; 1\end{pmatrix} =\end{split}\\\begin{split}\begin{pmatrix} 3 \\ 7 \end{pmatrix}
-\end{split}\end{aligned}\end{align} \]</div>
+\[\begin{split}t(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 1 \\ 1 \end{pmatrix} =
+\begin{pmatrix} 1 &amp;  1 &amp; + &amp; 2  &amp; 1 \\ 3 &amp; 1 &amp; + &amp; 4 &amp; 1\end{pmatrix} =
+\begin{pmatrix} 3 \\ 7 \end{pmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{split}
-t(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \end{split}\\\begin{split}\begin{pmatrix} 2 \\ 3 \end{pmatrix} =\end{split}\\\begin{split}
-\begin{pmatrix} 1 &amp;  2 &amp; + &amp; 2  &amp; 3 \\ 3 &amp; 2 &amp; + &amp; 4 &amp; 3\end{pmatrix} =\end{split}\\\begin{split}\begin{pmatrix} 8 \\ 18 \end{pmatrix}
-\end{split}\end{aligned}\end{align} \]</div>
+\[\begin{split}t(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 2 \\ 3 \end{pmatrix} =
+\begin{pmatrix} 1 &amp;  2 &amp; + &amp; 2  &amp; 3 \\ 3 &amp; 2 &amp; + &amp; 4 &amp; 3\end{pmatrix} =
+\begin{pmatrix} 8 \\ 18 \end{pmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}
-t(u) + t(v) =\\\begin{split}\begin{pmatrix} 3 \\ 7 \end{pmatrix} +
+\[ \begin{align}\begin{aligned}t(u) + t(v) =\\\begin{split}\begin{pmatrix} 3 \\ 7 \end{pmatrix} +
 \begin{pmatrix} 8 \\ 18 \end{pmatrix} =
-\begin{pmatrix} 11 \\ 25 \end{pmatrix}
-\end{split}\end{aligned}\end{align} \]</div>
+\begin{pmatrix} 11 \\ 25 \end{pmatrix}\end{split}\end{aligned}\end{align} \]</div>
 <p>Selanjutnya kita coba hitung <span class="math notranslate nohighlight">\(t(u+v)\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} 
-u + v = 
+\[\begin{split}u + v = 
 \begin{pmatrix} 1 \\ 1 \end{pmatrix} +
 \begin{pmatrix} 2 \\ 3 \end{pmatrix} = 
-\begin{pmatrix} 3 \\ 4 \end{pmatrix}
-\end{split}\]</div>
-<p>$$
-t(u + v) = A(u + v) = \begin{pmatrix} 1 &amp; 2 \ 3 &amp; 4 \end{pmatrix}
-\begin{pmatrix} 3 \ 4 \end{pmatrix} =
-\begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 4 \ 3 &amp; 3 &amp; + &amp; 4 &amp; 4 \end{pmatrix} =
-\begin{pmatrix} 11 \ 25 \end{pmatrix}</p>
+\begin{pmatrix} 3 \\ 4 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}t(u + v) = A(u + v) = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}
+\begin{pmatrix} 3 \\ 4 \end{pmatrix} =
+\begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 4 \\ 3 &amp; 3 &amp; + &amp; 4 &amp; 4 \end{pmatrix} = 
+\begin{pmatrix} 11 \\ 25 \end{pmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li><p>Pelestarian Perkalian dengan Skalar:
 Transformasi linier juga mempertahankan perkalian suatu vektor dengan skalar. artinya jika mempunyai vektor <span class="math notranslate nohighlight">\(u\)</span> dan skalar <span class="math notranslate nohighlight">\(c\)</span>, transformasi linier <span class="math notranslate nohighlight">\(T\)</span> memenuhi
-$<span class="math notranslate nohighlight">\(T(\alpha u) = \alpha T(u)\)</span>$</p></li>
+$<span class="math notranslate nohighlight">\( T(\alpha u) = \alpha T(u) \)</span>$</p></li>
 </ol>
+<p>Pembuktian dari rumus ini adalah sebagai berikut ini:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \end{split}\]</div>
+<p>Ambil vektor <span class="math notranslate nohighlight">\(u\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} u = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \end{split}\]</div>
+<p>dan ambil skalar <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\( a = 3 \)</span></p>
+<p>pertama, kita hitung <span class="math notranslate nohighlight">\( T(\alpha u) \)</span> :</p>
+<p>a. kalikan vektor <span class="math notranslate nohighlight">\(u\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span>:
+$<span class="math notranslate nohighlight">\( \alpha u = 3 \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} \)</span>$</p>
+<p>b. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(\alpha u\)</span>:
+$$</p>
+<p>T(\alpha u) = a(\alpha u) = \begin{pmatrix} 1 &amp; 2 \ 3 &amp; 4 \end{pmatrix} \begin{pmatrix} 3 \ 3 \end{pmatrix} = \begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 3 \ 3 &amp; 3 &amp; + &amp; 4 &amp; 3 \end{pmatrix} = \begin{pmatrix} 9 \ 21 \end{pmatrix}</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}Kedua, kita hitung $ \alpha T(u): $\\a. Terapkan transformasi $T$ pada vektor $u$:\end{aligned}\end{align} \]</div>
+<p>T(u) = Au = \begin{pmatrix} 1 &amp; 2 \ 3 &amp; 4 \end{pmatrix} \begin{pmatrix} 1 \ 1 \end{pmatrix} = \begin{pmatrix} 3 \ 7 \end{pmatrix}
+$$</p>
+<p>b. Kalikan hasil transformasi <span class="math notranslate nohighlight">\(T(u)\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}aT(u) = 3 \begin{pmatrix} 3 \\ 7 \end{pmatrix} = \begin{pmatrix} 9 \\ 21 \end{pmatrix}\end{split}\]</div>
+</section>
+<section id="penerapan-dari-transformasi-linier">
+<h2>Penerapan dari Transformasi Linier<a class="headerlink" href="#penerapan-dari-transformasi-linier" title="Link to this heading">#</a></h2>
+<p>Soal:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T \begin{pmatrix} 2 \\ 0 \end{pmatrix} = \begin{pmatrix} -2 \\ 0 \end{pmatrix} 
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}\end{split}\]</div>
+<p>Mari kita mulai dengan menuliskan bentuk umum matrix A yang memetakan vektor - vektor standart:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}
+\end{split}\]</div>
+<p>kita perlu menemukan <span class="math notranslate nohighlight">\(a,b,c,d\)</span> sehingga syarat-syarat di atas terpenuhi</p>
+<ol class="arabic simple">
+<li><p>Menggunakan informasi pertama</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \begin{pmatrix} 2 \\ 0 \end{pmatrix} = \begin{pmatrix} -2 \\ 0 \end{pmatrix}
+\end{split}\]</div>
+<p>ini memberikan kita dua persamaan:
+$<span class="math notranslate nohighlight">\(
+\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} 2 \\ 0 \end{pmatrix} = \begin{pmatrix} 2a \\ 2c \end{pmatrix} = \begin{pmatrix} -2 \\ 0 \end{pmatrix}
+\)</span>$</p>
+<p>Dari sini, kita mendapatkan:</p>
+<p>a. <span class="math notranslate nohighlight">\(2a = -2 \Longrightarrow \alpha = -1 \\\)</span>
+b. <span class="math notranslate nohighlight">\(2c = 0 \Longrightarrow c =0 \)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Menggunakan informasi kedua:
+$<span class="math notranslate nohighlight">\(
+A \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}
+\)</span>$
+ini memberikan kita dua persamaan:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2a + 2b \\ 2c + 2d \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}\end{split}\]</div>
+<p>dari sini, kita mendapatkan:</p>
+<p>a. <span class="math notranslate nohighlight">\( 2a + 2b = -2 \\\)</span>
+b. <span class="math notranslate nohighlight">\( 2c + 2d = 2\)</span></p>
+<p>dengan <span class="math notranslate nohighlight">\(a = -1 \)</span> dan <span class="math notranslate nohighlight">\( c = 0 \)</span>, subsitusi ke dalam persamaan ini menghasilkan</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\( 2(-1) + 2b = -2 \Longrightarrow -2 + 2b = -2 \Longrightarrow 2b = 0 \Longrightarrow b = 0 \\\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\( 2(0) + 2d = 2 \Longrightarrow 2d = 2 \Longrightarrow d = 1 \)</span></p></li>
+</ol>
+<section id="matrix-transformasi">
+<h3>Matrix Transformasi<a class="headerlink" href="#matrix-transformasi" title="Link to this heading">#</a></h3>
+<p>Setelah menentukan nilai-nilai dari <span class="math notranslate nohighlight">\(a,b,c,d\)</span> kita mendapatkan:</p>
+<p><span class="math notranslate nohighlight">\(
+A \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}
+\)</span></p>
+</section>
+</section>
+<section id="pengertian-dari-refleksi-pada-transformasi-linier">
+<h2>Pengertian dari Refleksi pada transformasi linier<a class="headerlink" href="#pengertian-dari-refleksi-pada-transformasi-linier" title="Link to this heading">#</a></h2>
+<p>Refleksi dalam transformasi linier adalah sebuah operasi yang mengubah sifat vektor dalam ruang vektor. Dalam konteks transformasi linier, refleksi dapat diartikan sebagai perubahan orientasi vektor yang terjadi ketika vektor tersebut dipantulkan terhadap suatu bidan atau sumbu.</p>
+<p>Misalnya, jika kita memiliki vektor <span class="math notranslate nohighlight">\(v\)</span> dan kita ingin melakukan reflesi terhadap sumbu <span class="math notranslate nohighlight">\(x\)</span>, maka hasilnya akan menjadi -<span class="math notranslate nohighlight">\(v\)</span>. Artinya, vektor asli <span class="math notranslate nohighlight">\(v\)</span> akan dipantulkan terhadap sumbu <span class="math notranslate nohighlight">\(x\)</span> sehingga menjadi vektor baru -<span class="math notranslate nohighlight">\(v\)</span> yang memiliki orientasi yang berlawanan dengan vektor asli.</p>
 </section>
 </section>
 
@@ -559,6 +639,11 @@ $<span class="math notranslate nohighlight">\(T(\alpha u) = \alpha T(u)\)</span>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">Sifat Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penerapan-dari-transformasi-linier">Penerapan dari Transformasi Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-transformasi">Matrix Transformasi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-dari-refleksi-pada-transformasi-linier">Pengertian dari Refleksi pada transformasi linier</a></li>
 </ul>
   </nav></div>
 
