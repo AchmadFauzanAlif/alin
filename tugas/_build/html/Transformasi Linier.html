@@ -480,9 +480,10 @@ u = \begin{pmatrix}
 \begin{pmatrix} 1 &amp;  2 &amp; + &amp; 2  &amp; 3 \\ 3 &amp; 2 &amp; + &amp; 4 &amp; 3\end{pmatrix} =
 \begin{pmatrix} 8 \\ 18 \end{pmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}t(u) + t(v) =\\\begin{split}\begin{pmatrix} 3 \\ 7 \end{pmatrix} +
+\[\begin{split}t(u) + t(v) =
+\begin{pmatrix} 3 \\ 7 \end{pmatrix} +
 \begin{pmatrix} 8 \\ 18 \end{pmatrix} =
-\begin{pmatrix} 11 \\ 25 \end{pmatrix}\end{split}\end{aligned}\end{align} \]</div>
+\begin{pmatrix} 11 \\ 25 \end{pmatrix}\end{split}\]</div>
 <p>Selanjutnya kita coba hitung <span class="math notranslate nohighlight">\(t(u+v)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}u + v = 
@@ -497,7 +498,7 @@ u = \begin{pmatrix}
 <ol class="arabic simple" start="2">
 <li><p>Pelestarian Perkalian dengan Skalar:
 Transformasi linier juga mempertahankan perkalian suatu vektor dengan skalar. artinya jika mempunyai vektor <span class="math notranslate nohighlight">\(u\)</span> dan skalar <span class="math notranslate nohighlight">\(c\)</span>, transformasi linier <span class="math notranslate nohighlight">\(T\)</span> memenuhi
-$<span class="math notranslate nohighlight">\( T(\alpha u) = \alpha T(u) \)</span>$</p></li>
+<span class="math notranslate nohighlight">\( T(\alpha u) = \alpha T(u) \)</span></p></li>
 </ol>
 <p>Pembuktian dari rumus ini adalah sebagai berikut ini:</p>
 <div class="math notranslate nohighlight">
@@ -509,14 +510,27 @@ $<span class="math notranslate nohighlight">\( T(\alpha u) = \alpha T(u) \)</spa
 <p><span class="math notranslate nohighlight">\( a = 3 \)</span></p>
 <p>pertama, kita hitung <span class="math notranslate nohighlight">\( T(\alpha u) \)</span> :</p>
 <p>a. kalikan vektor <span class="math notranslate nohighlight">\(u\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span>:
-$<span class="math notranslate nohighlight">\( \alpha u = 3 \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 3 \\ 3 \end{pmatrix} \)</span>$</p>
-<p>b. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(\alpha u\)</span>:
-$$</p>
-<p>T(\alpha u) = a(\alpha u) = \begin{pmatrix} 1 &amp; 2 \ 3 &amp; 4 \end{pmatrix} \begin{pmatrix} 3 \ 3 \end{pmatrix} = \begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 3 \ 3 &amp; 3 &amp; + &amp; 4 &amp; 3 \end{pmatrix} = \begin{pmatrix} 9 \ 21 \end{pmatrix}</p>
+$<span class="math notranslate nohighlight">\( 
+\alpha u = 3 \begin{pmatrix} 1 \\ 1 \end{pmatrix} = 
+\begin{pmatrix} 3 \\ 3 \end{pmatrix} 
+\)</span>$</p>
+<p>b. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(\alpha u\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}Kedua, kita hitung $ \alpha T(u): $\\a. Terapkan transformasi $T$ pada vektor $u$:\end{aligned}\end{align} \]</div>
-<p>T(u) = Au = \begin{pmatrix} 1 &amp; 2 \ 3 &amp; 4 \end{pmatrix} \begin{pmatrix} 1 \ 1 \end{pmatrix} = \begin{pmatrix} 3 \ 7 \end{pmatrix}
-$$</p>
+\[\begin{split} 
+T(\alpha u) = a(\alpha u) = 
+\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 3 \\ 3 \end{pmatrix} = 
+\begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 3 \\ 3 &amp; 3 &amp; + &amp; 4 &amp; 3 \end{pmatrix} = 
+\begin{pmatrix} 9 \\ 21 \end{pmatrix}
+\end{split}\]</div>
+<p>Kedua, kita hitung <span class="math notranslate nohighlight">\( \alpha T(u): \)</span></p>
+<p>a. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(u\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 1 \\ 1 \end{pmatrix} = 
+\begin{pmatrix} 3 \\ 7 \end{pmatrix}
+\end{split}\]</div>
 <p>b. Kalikan hasil transformasi <span class="math notranslate nohighlight">\(T(u)\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}aT(u) = 3 \begin{pmatrix} 3 \\ 7 \end{pmatrix} = \begin{pmatrix} 9 \\ 21 \end{pmatrix}\end{split}\]</div>
@@ -548,17 +562,19 @@ $<span class="math notranslate nohighlight">\(
 \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} 2 \\ 0 \end{pmatrix} = \begin{pmatrix} 2a \\ 2c \end{pmatrix} = \begin{pmatrix} -2 \\ 0 \end{pmatrix}
 \)</span>$</p>
 <p>Dari sini, kita mendapatkan:</p>
-<p>a. <span class="math notranslate nohighlight">\(2a = -2 \Longrightarrow \alpha = -1 \\\)</span>
-b. <span class="math notranslate nohighlight">\(2c = 0 \Longrightarrow c =0 \)</span></p>
+<p>a. <span class="math notranslate nohighlight">\(2a = -2 \Longrightarrow \alpha = -1 \\\)</span></p>
+<p>b. <span class="math notranslate nohighlight">\(2c = 0 \Longrightarrow c =0 \)</span></p>
 <ol class="arabic simple" start="2">
 <li><p>Menggunakan informasi kedua:
-$<span class="math notranslate nohighlight">\(
-A \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}
-\)</span>$
-ini memberikan kita dua persamaan:</p></li>
+$$</p></li>
 </ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2a + 2b \\ 2c + 2d \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}\end{split}\]</div>
+<p>A \begin{pmatrix} 2 \ 2 \end{pmatrix} =
+\begin{pmatrix} -2 \ 2 \end{pmatrix}
+$$</p>
+<p>ini memberikan kita dua persamaan:
+<span class="math notranslate nohighlight">\(
+\begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 2a + 2b \\ 2c + 2d \end{pmatrix} = \begin{pmatrix} -2 \\ 2 \end{pmatrix}
+\)</span></p>
 <p>dari sini, kita mendapatkan:</p>
 <p>a. <span class="math notranslate nohighlight">\( 2a + 2b = -2 \\\)</span>
 b. <span class="math notranslate nohighlight">\( 2c + 2d = 2\)</span></p>
