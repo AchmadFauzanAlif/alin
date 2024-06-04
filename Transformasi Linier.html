@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Transformasi Linier';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Aplikasi Aljabar Linier" href="Aplikasi%20Aljabar%20Linier.html" />
     <link rel="prev" title="EigenValue &amp; EigenVector" href="eigenvalue%26eigenvector.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -185,6 +186,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Determinan%20Matriks.html">Materi Determinan Matriks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="eigenvalue%26eigenvector.html">EigenValue &amp; EigenVector</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Transformasi Linier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Aplikasi%20Aljabar%20Linier.html"><em>Aplikasi Aljabar Linier</em></a></li>
 </ul>
 </li>
 </ul>
@@ -534,6 +536,45 @@ T(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix}
 <p>b. Kalikan hasil transformasi <span class="math notranslate nohighlight">\(T(u)\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}aT(u) = 3 \begin{pmatrix} 3 \\ 7 \end{pmatrix} = \begin{pmatrix} 9 \\ 21 \end{pmatrix}\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Pelestarian Perkalian dengan Skalar:
+Transformasi linier juga mempertahankan perkalian suatu vektor dengan skalar. artinya jika mempunyai vektor <span class="math notranslate nohighlight">\(u\)</span> dan skalar <span class="math notranslate nohighlight">\(c\)</span>, transformasi linier <span class="math notranslate nohighlight">\(T\)</span> memenuhi
+<span class="math notranslate nohighlight">\( T(\alpha u) = \alpha T(u) \)</span></p></li>
+</ol>
+<p>Pembuktian dari rumus ini adalah sebagai berikut ini:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} A = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} \end{split}\]</div>
+<p>Ambil vektor <span class="math notranslate nohighlight">\(u\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split} u = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \end{split}\]</div>
+<p>dan ambil skalar <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\( a = 3 \)</span></p>
+<p>pertama, kita hitung <span class="math notranslate nohighlight">\( T(\alpha u) \)</span> :</p>
+<p>a. kalikan vektor <span class="math notranslate nohighlight">\(u\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span>:
+$<span class="math notranslate nohighlight">\( 
+\alpha u = 3 \begin{pmatrix} 1 \\ 1 \end{pmatrix} = 
+\begin{pmatrix} 3 \\ 3 \end{pmatrix} 
+\)</span>$</p>
+<p>b. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(\alpha u\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+T(\alpha u) = a(\alpha u) = 
+\begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 3 \\ 3 \end{pmatrix} = 
+\begin{pmatrix} 1 &amp; 3 &amp; + &amp; 2 &amp; 3 \\ 3 &amp; 3 &amp; + &amp; 4 &amp; 3 \end{pmatrix} = 
+\begin{pmatrix} 9 \\ 21 \end{pmatrix}
+\end{split}\]</div>
+<p>Kedua, kita hitung <span class="math notranslate nohighlight">\( \alpha T(u): \)</span></p>
+<p>a. Terapkan transformasi <span class="math notranslate nohighlight">\(T\)</span> pada vektor <span class="math notranslate nohighlight">\(u\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(u) = Au = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{pmatrix} 
+\begin{pmatrix} 1 \\ 1 \end{pmatrix} = 
+\begin{pmatrix} 3 \\ 7 \end{pmatrix}
+\end{split}\]</div>
+<p>b. Kalikan hasil transformasi <span class="math notranslate nohighlight">\(T(u)\)</span> dengan skalar <span class="math notranslate nohighlight">\(\alpha\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}aT(u) = 3 \begin{pmatrix} 3 \\ 7 \end{pmatrix} = \begin{pmatrix} 9 \\ 21 \end{pmatrix}\end{split}\]</div>
 </section>
 <section id="penerapan-dari-transformasi-linier">
 <h2>Penerapan dari Transformasi Linier<a class="headerlink" href="#penerapan-dari-transformasi-linier" title="Link to this heading">#</a></h2>
@@ -636,6 +677,15 @@ A \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">EigenValue &amp; EigenVector</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Aplikasi%20Aljabar%20Linier.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><em>Aplikasi Aljabar Linier</em></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
